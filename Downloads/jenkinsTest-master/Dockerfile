@@ -6,6 +6,8 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN pip install Flask
 WORKDIR /app
 
+# COPY ./requirements.txt /app/
+# RUN pip install -r /app/requirements.txt
 
 COPY ./src/ /app/src
 
